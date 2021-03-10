@@ -53,5 +53,12 @@ alter table employee_Payroll add PhoneNumber bigint, Address varchar(150) defaul
 alter table employee_Payroll add Deduction int, TaxablePay int, IncomeTax int, NetPay int;
 EXEC sp_RENAME 'employee_Payroll.Salary', 'BasicPay', 'column'
 
+--UC10:Add terissa for marketing and sales
+insert into employee_Payroll(Name, BasicPay, StartDate,Gender) values
+('Terissa', 15000, '2019-01-01','F');
+update employee_Payroll set Department = 'Sales'  where Name  = 'Terissa';
+insert into employee_Payroll(Name, Department) values('Terissa', 'Marketing');
+
+
 
 
