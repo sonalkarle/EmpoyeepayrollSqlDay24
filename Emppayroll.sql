@@ -1,13 +1,4 @@
 
---UC2:Create table for employee payroll
-create Table emp_Payroll
-(
-ID			int	identity(1, 1),
-Name		varchar(255) NOT Null,
-Salary		int,
-StartDate	Date,
-primary key(ID)
-)
 
 --UC3:Ability to use insert option
 insert into emp_Payroll(Name, Salary, StartDate) values
