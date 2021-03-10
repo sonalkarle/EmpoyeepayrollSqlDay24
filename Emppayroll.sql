@@ -39,3 +39,11 @@ select * from employee_Payroll;
 --UC5: Find particular person salary and particular date range 
 select salary from employee_Payroll where Name = 'dhoni';
 select * from employee_Payroll where StartDate	between '2020-01-01' and GETDATE();
+
+
+--UC6:Ability to add geneder row in table
+alter table employee_Payroll add Gender char(1)
+update employee_Payroll set Gender = 'M'; 
+insert into employee_Payroll(Name, Salary, StartDate,Gender) values
+('shravni', 15000, '2019-01-01','F'),
+('seema', 30000, '2020-01-01','F');
