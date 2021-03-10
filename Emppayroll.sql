@@ -47,3 +47,11 @@ update employee_Payroll set Gender = 'M';
 insert into employee_Payroll(Name, Salary, StartDate,Gender) values
 ('shravni', 15000, '2019-01-01','F'),
 ('seema', 30000, '2020-01-01','F');
+
+--UC7:Ability to find avg,min,max and count
+select sum(Salary) as total_salary from employee_Payroll
+select avg(Salary) as average_salary from employee_Payroll
+select min(Salary) as min_salary from employee_Payroll
+select max(Salary) as max_salary from employee_Payroll
+select count(Salary) as salary_count from employee_Payroll
+
