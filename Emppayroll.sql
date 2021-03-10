@@ -1,16 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
 
->>>>>>> UC2_CreateTable
-=======
-
-
-
-
->>>>>>> UC3_InsertDetails
 --UC1:create Db employee payroll
 create database employee_Payroll;
 select * from sys.databases;
@@ -59,4 +47,11 @@ select count(Salary) as salary_count from employee_Payroll
 
 --UC8:Add address and department extend the row
 alter table employee_Payroll add PhoneNumber bigint, Address varchar(150) default('Mumbai'), Department varchar(50)  ;
+
+
+--UC9:Ability to extend basic pay,deduction,tax pay,Income tax,net pay
+alter table employee_Payroll add Deduction int, TaxablePay int, IncomeTax int, NetPay int;
+EXEC sp_RENAME 'employee_Payroll.Salary', 'BasicPay', 'column'
+
+
 
