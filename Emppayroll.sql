@@ -55,3 +55,6 @@ select min(Salary) as min_salary from employee_Payroll
 select max(Salary) as max_salary from employee_Payroll
 select count(Salary) as salary_count from employee_Payroll
 
+select Gender, sum(Salary) as total_salary from employee_Payroll group by Gender
+select Gender, count(Salary) as salary_count from employee_Payroll group by Gender
+select Gender, max(Salary) as max_salary from employee_Payroll group by Gender;
