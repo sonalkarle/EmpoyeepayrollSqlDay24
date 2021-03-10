@@ -19,5 +19,3 @@ insert into emp_Payroll(Name, Salary, StartDate) values
 ('kohli', 45000, '2019-01-01'),
 ('rahane', 22000, '2020-01-01');
 
---UC4:Ability to retrive data
-Select * from emp_Payroll
