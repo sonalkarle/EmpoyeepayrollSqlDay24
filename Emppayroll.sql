@@ -42,8 +42,10 @@ select avg(Salary) as average_salary from employee_Payroll
 select min(Salary) as min_salary from employee_Payroll
 select max(Salary) as max_salary from employee_Payroll
 select count(Salary) as salary_count from employee_Payroll
+select Gender, sum(Salary) as total_salary from employee_Payroll group by Gender
+select Gender, count(Salary) as salary_count from employee_Payroll group by Gender
+select Gender, max(Salary) as max_salary from employee_Payroll group by Gender;
 
-<<<<<<< HEAD
 
 
 --UC8:Add address and department extend the row
@@ -63,8 +65,3 @@ insert into employee_Payroll(Name, Department) values('Terissa', 'Marketing');
 
 
 
-=======
-select Gender, sum(Salary) as total_salary from employee_Payroll group by Gender
-select Gender, count(Salary) as salary_count from employee_Payroll group by Gender
-select Gender, max(Salary) as max_salary from employee_Payroll group by Gender;
->>>>>>> UC7_GroupFun
