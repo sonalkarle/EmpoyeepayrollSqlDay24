@@ -1,7 +1,3 @@
---UC1: Create database for employee payroll
-create database emp_Payroll;
-SELECT * FROM sys.databases ;  
-use emp_Payroll;
 
 --UC2:Create table for employee payroll
 create Table emp_Payroll
@@ -56,3 +52,6 @@ insert into emp_Payroll(Name, Salary, StartDate,Gender) values
 ('Terissa', 15000, '2019-01-01','F');
 update emp_Payroll set Department = 'Sales'  where Name  = 'Terissa';
 insert into emp_Payroll(Name, Department) values('Terissa', 'Marketing');
+
+
+
