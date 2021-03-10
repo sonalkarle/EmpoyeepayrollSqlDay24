@@ -55,3 +55,8 @@ select min(Salary) as min_salary from employee_Payroll
 select max(Salary) as max_salary from employee_Payroll
 select count(Salary) as salary_count from employee_Payroll
 
+
+
+--UC8:Add address and department extend the row
+alter table employee_Payroll add PhoneNumber bigint, Address varchar(150) default('Mumbai'), Department varchar(50)  ;
+
