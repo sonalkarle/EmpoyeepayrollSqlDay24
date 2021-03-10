@@ -34,3 +34,8 @@ insert into employee_Payroll(Name, Salary, StartDate) values
 
 --UC4:Ability to retrive data
 select * from employee_Payroll;
+
+
+--UC5: Find particular person salary and particular date range 
+select salary from employee_Payroll where Name = 'dhoni';
+select * from employee_Payroll where StartDate	between '2020-01-01' and GETDATE();
