@@ -1,13 +1,6 @@
 
 
---UC3:Ability to use insert option
-insert into emp_Payroll(Name, Salary, StartDate) values
-('dhoni', 20000, '2018-01-01'),
-('kohli', 45000, '2019-01-01'),
-('rahane', 22000, '2020-01-01');
 
---UC4:Ability to retrive data
-select * from emp_Payroll;
 
 --UC5: Find particular person salary and particular date range 
 select salary from emp_Payroll where Name = 'dhoni';
